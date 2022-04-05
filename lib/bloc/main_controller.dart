@@ -7,15 +7,15 @@ import 'package:music/data/models/song_model.dart';
 
 class MainController extends ChangeNotifier {
   var audios = <Audio>[
-    Audio.network(
-      'https://cdn.pixabay.com/download/audio/2022/01/20/audio_f1b4f4c8b1.mp3?filename=welcome-to-the-games-15238.mp3',
+    Audio.file(
+      'assets/song/??.mp3',
       metas: Metas(
         id: 'Online',
         title: 'Welcome Here',
-        artist: 'Ansh Rathod',
+        artist: 'Sky Night',
         album: 'OnlineAlbum',
         image: const MetasImage.network(
-            'https://images.unsplash.com/photo-1611339555312-e607c8352fd7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'),
+            'https://scontent.fsgn5-8.fna.fbcdn.net/v/t1.6435-9/192385042_629875891301761_4724412327417235169_n.jpg?_nc_cat=109&ccb=1-5&_nc_sid=174925&_nc_ohc=JE6L_una8zAAX9Z148z&_nc_ht=scontent.fsgn5-8.fna&oh=00_AT8mHBYey4hj0aqo8nqjLQfDmU3Be3QLk1y9MU2Tm0VGXw&oe=626FFD51'),
       ),
     ),
   ];
