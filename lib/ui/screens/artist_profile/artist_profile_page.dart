@@ -4,6 +4,8 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:music/bloc/artist/artist_cubit.dart';
 import 'package:music/bloc/main_controller.dart';
 import 'package:music/data/models/load_enum.dart';
+import 'package:music/ui/widgets/bottom_sheet_c.dart';
+import 'package:music/ui/widgets/loading_image.dart';
 
 class ArtistProfile extends StatelessWidget {
   final String username;

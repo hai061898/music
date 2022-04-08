@@ -5,6 +5,7 @@ import 'package:music/bloc/main_controller.dart';
 import 'package:music/data/models/song_model.dart';
 import 'package:music/data/models/user_model.dart';
 import 'package:music/ui/screens/artist_profile/artist_profile_page.dart';
+import 'package:music/ui/widgets/bottom_sheet_c.dart';
 import 'package:music/ui/widgets/loading_image.dart';
 
 class HorizontalSongList extends StatelessWidget {

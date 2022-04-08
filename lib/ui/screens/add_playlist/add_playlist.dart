@@ -85,6 +85,7 @@ class AddToPlaylist extends StatelessWidget {
                               ),
                               TextButton(
                                 onPressed: () async {
+                                  // ignore: unnecessary_null_comparison
                                   if (con.text != null && con.text.isNotEmpty) {
                                     var box = Hive.box('playlists');
                                     box.add({
