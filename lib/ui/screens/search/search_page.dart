@@ -1,7 +1,11 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:music/bloc/main_controller.dart';
 import 'package:music/data/models/category_model.dart';
+import 'package:music/ui/methods/string_c.dart';
+import 'package:music/ui/screens/genre/genre_page.dart';
+import 'package:music/ui/screens/search/search_results_page.dart';
 
 class SearchPage extends StatelessWidget {
   final MainController con;
