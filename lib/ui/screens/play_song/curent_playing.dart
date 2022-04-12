@@ -12,6 +12,10 @@ import 'package:music/ui/widgets/like_button.dart';
 import 'package:music/ui/widgets/loading_image.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'components/play_list.dart';
+import 'components/playing_controller.dart';
+import 'components/seek_widget.dart';
+
 class CurrentPlayingSong extends StatelessWidget {
   final MainController con;
   const CurrentPlayingSong({
@@ -184,7 +188,7 @@ class CurrentPlayingSong extends StatelessWidget {
                         ),
                         con.player.builderCurrent(
                           builder: (context, Playing? playing) {
-                            return Column(children: <Widget>[
+                            return Column(children: [
                               con.player.builderRealtimePlayingInfos(builder:
                                   (context, RealtimePlayingInfos? infos) {
                                 if (infos == null) {
